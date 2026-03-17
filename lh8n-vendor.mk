@@ -727,6 +727,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
+	vendor/tecno/LH8n/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
@@ -745,6 +746,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
+	vendor/tecno/LH8n/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/tecno/LH8n/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
@@ -835,12 +837,14 @@ PRODUCT_PACKAGES += \
     libgz_uree \
     libion_mtk \
     libion_ulit \
+	libipsec_ims_shr \
     libladder \
     libmp3dec_mtk \
     libmtcloader \
     libmtklimiter_vendor \
     libnvram \
     libnvram_sec \
+	vendor.mediatek.hardware.videotelephony@1.0_vendor \
     AVCSecureVdecCA \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA \
@@ -877,6 +881,8 @@ PRODUCT_PACKAGES += \
     libmtkshifter_vendor \
     libmvpu_config_data \
     libnxp_extamp_intf \
+	librcs_interface \
+	librcs_volte_core \
     librt_extamp_intf \
     libspeech_enh_lib \
     libspeechparser_vendor \
@@ -889,10 +895,12 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libvpudv3a_vcodec \
     libvpx \
+	libvt_custom \
     libmtk_drvb \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
+	vendor.mediatek.hardware.rcs@2.0 \
     APUWareUtilsServer \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
@@ -1572,6 +1580,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
+	vendor.mediatek.hardware.clientapi@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
@@ -1609,7 +1618,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.transsion.hardware.tne.tneengine@1.0 \
     vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
@@ -1649,6 +1657,7 @@ PRODUCT_PACKAGES += \
     libeffect_hal \
     libc++_shared \
     wpa_supplicant \
+	ipsec_mon \
     kmsetkey_ca.trustonic \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
@@ -1660,10 +1669,13 @@ PRODUCT_PACKAGES += \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
+	rcs_volte_stack \
     thermal \
     thermal_manager \
     thermalloadalgod \
     v3avpud \
+	volte_clientapi_ua \
+    volte_rcs_ua \
     wlan_assistant \
     wmt_launcher \
     wmt_loader
