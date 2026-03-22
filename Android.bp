@@ -23674,6 +23674,79 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libsysenv_system",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libsysenv_system.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libsysenv_system.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libshowlogo",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libshowlogo.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc",
+                "libstdc++",
+                "libz",
+                "libdrm",
+                "liblog",
+                "libgui",
+                "libui",
+                "libbase",
+                "libSurfaceFlingerProp",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "lh8n.android.hardware.biometrics.fingerprint@2.1-service.xml",
     owner: "tecno",
@@ -25156,6 +25229,47 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "kpoc_charger",
+    owner: "tecno",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/kpoc_charger",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libstdc++",
+                "libz",
+                "liblog",
+                "libui",
+                "libdrm",
+                "libhardware_legacy",
+                "libsuspend",
+                "android.hardware.health@2.0",
+                "android.hardware.health-V1-ndk",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libhidltransport",
+                "libshowlogo",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
 }
 
 install_symlink {
