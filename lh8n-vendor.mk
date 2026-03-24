@@ -676,6 +676,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/etc/audio_param/preset_music.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_music.bin \
     vendor/tecno/LH8n/proprietary/vendor/etc/audio_param/preset_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_ringtone.bin \
     vendor/tecno/LH8n/proprietary/vendor/etc/audio_param/preset_voip.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/preset_voip.bin \
+vendor/tecno/LH8n/proprietary/vendor/etc/cam3atms_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cam3atms_profiles.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/dar_thermal_core/thermal_core_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/dar_thermal_core/thermal_core_config.json \
     vendor/tecno/LH8n/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -746,7 +747,8 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
-    vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
+    vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \    
+	vendor/tecno/LH8n/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
 	vendor/tecno/LH8n/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
@@ -754,6 +756,8 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
+	vendor/tecno/LH8n/proprietary/vendor/etc/tran_camprofiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tran_camprofiles.xml \
+    vendor/tecno/LH8n/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/tecno/LH8n/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -1631,6 +1635,7 @@ PRODUCT_PACKAGES += \
     gnss@2.1-service.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_media_c2_V1_2_default.xml \
+	vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     ccci_mdinit \
     ccci_rpcd \
     gsm0710muxd \
@@ -1679,8 +1684,9 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader
-
+    wmt_loader \
+	kpoc_charger
+	
 PRODUCT_PACKAGES += \
     vendor_lib_libmtk_drvb_so \
     vendor_lib64_libmtk_drvb_so \
