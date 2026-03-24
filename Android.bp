@@ -25385,6 +25385,8 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
+	allow_undefined_symbols: true,
+    check_elf_files: false,
 }
 
 install_symlink {
