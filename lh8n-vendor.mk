@@ -1658,6 +1658,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
+	vendor.tne@1.0-service \
+	vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     libeffect_hal \
