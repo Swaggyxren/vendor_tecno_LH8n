@@ -901,8 +901,6 @@ PRODUCT_PACKAGES += \
 	libvt_custom \
     libmtk_drvb \
     vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
 	vendor.mediatek.hardware.rcs@2.0 \
     APUWareUtilsServer \
     arm.graphics-V1-ndk_platform \
@@ -1666,6 +1664,7 @@ PRODUCT_PACKAGES += \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
     mcDriverDaemon \
+    libwpfa \
     libheichal \
     mnld \
     mtk_agpsd \
