@@ -914,7 +914,6 @@ PRODUCT_PACKAGES += \
     fake_serial_yuv_tuning \
     hi1634q_mipi_raw_IdxMgr \
     hi1634q_mipi_raw_tuning \
-    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
