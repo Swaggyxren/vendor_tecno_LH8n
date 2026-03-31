@@ -709,6 +709,7 @@ vendor/tecno/LH8n/proprietary/vendor/etc/cam3atms_profiles.xml:$(TARGET_COPY_OUT
     vendor/tecno/LH8n/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
+	vendor/tecno/LH8n/proprietary/vendor/etc/init/mtk.android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk.android.hardware.wifi.supplicant-service.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
@@ -1625,6 +1626,7 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.1 \
     lh8n.android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
+	mtk.android.hardware.wifi.supplicant.xml \
     gnss-mediatek.xml \
     gnss@2.1-service.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
@@ -1657,6 +1659,7 @@ PRODUCT_PACKAGES += \
     vtservice_hidl \
     libeffect_hal \
     libc++_shared \
+	wpa_supplicant \
     ipsec_mon \
     kmsetkey_ca.trustonic \
     lib3a.ccu.ddr \
