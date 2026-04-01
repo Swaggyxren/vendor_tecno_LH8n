@@ -23741,6 +23741,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "mtk.android.hardware.wifi.supplicant.xml",
+    owner: "tecno",
+    src: "proprietary/vendor/etc/vintf/manifest/mtk.android.hardware.wifi.supplicant.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "gnss-mediatek.xml",
     owner: "tecno",
     src: "proprietary/vendor/etc/vintf/manifest/gnss-mediatek.xml",
