@@ -854,7 +854,7 @@ PRODUCT_PACKAGES += \
     libmtklimiter_vendor \
     libnvram \
     libnvram_sec \
-	vendor.mediatek.hardware.videotelephony@1.0 \
+	vendor.mediatek.hardware.videotelephony@1.0_vendor \
     AVCSecureVdecCA \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA \
