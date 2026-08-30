@@ -14904,7 +14904,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -14953,7 +14953,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -15923,7 +15923,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
     owner: "tecno",
     strip: {
         none: true,
@@ -15931,7 +15931,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
+                "proprietary/vendor/lib64/libformatter_mtk.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -16931,33 +16931,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmnl",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmnl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -24667,45 +24640,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "wpa_supplicant",
-    owner: "tecno",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/wpa_supplicant",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcrypto-v33",
-                "libkeystore-wifi-hidl",
-                "libkeystore-engine-wifi-hidl",
-                "libnl",
-                "android.hardware.wifi.supplicant@1.0",
-                "android.hardware.wifi.supplicant@1.1",
-                "android.hardware.wifi.supplicant@1.2",
-                "android.hardware.wifi.supplicant@1.3",
-                "android.hardware.wifi.supplicant@1.4",
-                "libhidlbase",
-                "libutils",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    check_elf_files: false,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libeffect_hal",
@@ -24866,6 +24800,31 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libmnl_mtk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmnl_mtk.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "mnld",
     owner: "tecno",
@@ -24875,7 +24834,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -24900,6 +24859,7 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25231,6 +25191,9 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    init_rc: [
+        "proprietary/vendor/etc/init/wlan_assistant.rc",
+    ],
     strip: {
         none: true,
     },
