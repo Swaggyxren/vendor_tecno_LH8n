@@ -11,8 +11,13 @@ service vendor.ril-daemon-mtk /vendor/bin/hw/mtkfusionrild -l libmtk-ril.so
     user radio
     group radio net_admin net_raw cache inet misc audio log readproc wakelock sdcard_r sdcard_rw system
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW WAKE_ALARM
-    oneshot
     disabled
+
+on property:vendor.mtk.md1.status=ready
+    start vendor.ril-daemon-mtk
+
+on property:vendor.ril.mux.report.case=2
+    start vendor.ril-daemon-mtk
 
 on property:vendor.ril.mtk=1
     start vendor.ril-daemon-mtk
