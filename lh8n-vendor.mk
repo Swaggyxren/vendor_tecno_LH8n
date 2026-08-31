@@ -718,6 +718,7 @@ vendor/tecno/LH8n/proprietary/vendor/etc/cam3atms_profiles.xml:$(TARGET_COPY_OUT
     vendor/tecno/LH8n/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
+    vendor/tecno/LH8n/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
@@ -1498,7 +1499,6 @@ PRODUCT_PACKAGES += \
     libmtkconfig \
     libmtkconfigutils \
     libmtkcutils \
-    libmtkhardware_legacy \
     libmtkisp_metadata \
     libmtkmipc-ril \
     libmtknetcap \
@@ -1642,6 +1642,7 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     gsm0710muxd \
+    muxreport \
     fuelgauged \
     fuelgauged_nvram \
     lh8n.android.hardware.biometrics.fingerprint@2.1-service \
