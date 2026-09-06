@@ -22,9 +22,6 @@ PRODUCT_COPY_FILES += \
     $(IMS_VNDR_PATH)/configs/permissions/mediatek-telephony-base.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-telephony-base.xml \
     $(IMS_VNDR_PATH)/configs/permissions/mediatek-telephony-common.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-telephony-common.xml
 
-# Compatibility shims
-PRODUCT_PACKAGES += \
-    libui_shim
 
 # MTK IMS Overlays
 PRODUCT_PACKAGES += \
