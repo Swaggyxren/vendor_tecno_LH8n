@@ -28,8 +28,8 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|cdd9da0a0896031f
 
 # IMS (Privileged APKs) - from LH8n TECNO-LH8n:14/UP1A.231005.007/240910V771
 # NOTE: ImsService.apk is smali-patched to strip non-essential TelephonyMetrics calls
-# that cause NoClassDefFoundError / RescueParty bootloops on Android 16 (BP4A).
-# Reference: techyminati/android_vendor_mediatek_ims commit e9cab87. Stock SHA1: 59990c112e93b645ff96fef7740708a4870b9443.
--system_ext/priv-app/ImsService/ImsService.apk|03656e9ec8ee50f2e793ebb6b04fb7ee367ff325
+# and set RECEIVER_EXPORTED flag on dynamic broadcast receivers for Android 16 (BP4A).
+# Stock SHA1: 59990c112e93b645ff96fef7740708a4870b9443.
+-system_ext/priv-app/ImsService/ImsService.apk|c924a897cd5c04caf26365f92441bc9b4ef6f7ef
 -system_ext/priv-app/MtkGbaService/MtkGbaService.apk|f30518da86ad922f389ed815f747719db5e44563
 -system_ext/priv-app/MtkTelephonyAssist/MtkTelephonyAssist.apk|4a19edd77ebfdb61dad767d073dfa484e3c27c0c
