@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/tecno/LH8n",
         "hardware/mediatek",
         "hardware/mediatek/libmtkperf_client",
     ],
@@ -19730,7 +19731,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -22115,6 +22115,32 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "muxreport",
+    owner: "tecno",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/muxreport",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     strip: {
         none: true,
     },
