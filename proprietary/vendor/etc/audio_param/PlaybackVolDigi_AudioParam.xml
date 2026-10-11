@@ -373,37 +373,37 @@
       <Param name="digital_gain" value="-64,-63,-53,-45,-37,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
     </ParamUnit>
     <ParamUnit param_id="46">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="47">
       <Param name="digital_gain" value="-64,-38,-33,-28,-23,-19,-15,-12,-9,-8,-7,-6,-5,-4,-2,0"/>
     </ParamUnit>
     <ParamUnit param_id="48">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="49">
       <Param name="digital_gain" value="-64,-38,-33,-28,-23,-19,-15,-12,-9,-8,-7,-6,-5,-4,-2,0"/>
     </ParamUnit>
     <ParamUnit param_id="50">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="51">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="52">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="53">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="54">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="55">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="56">
-      <Param name="digital_gain" value="-64,-63,-55,-47,-39,-35,-31,-28,-25,-22,-19,-16,-13,-10,-5,0"/>
+      <Param name="digital_gain" value="-64,-50,-42,-35,-29,-24,-20,-16,-13,-10,-8,-6,-4,-2,-1,0"/>
     </ParamUnit>
     <ParamUnit param_id="57">
       <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
