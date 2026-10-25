@@ -10792,35 +10792,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libTranMegHumanEffect",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTranMegHumanEffect.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libTran_Log",
-                "libTranPlatHW",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libTranPlatHW",
     owner: "tecno",
     strip: {
