@@ -494,10 +494,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/data/camera/model/lut_sunset2.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lut_sunset2.png \
     vendor/tecno/LH8n/proprietary/vendor/data/camera/model/lut_sunshine.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lut_sunshine.png \
     vendor/tecno/LH8n/proprietary/vendor/data/camera/model/lut_sunshine2.png:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/lut_sunshine2.png \
-    vendor/tecno/LH8n/proprietary/vendor/data/camera/model/meghumaneffect/human_model_image:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/meghumaneffect/human_model_image \
-    vendor/tecno/LH8n/proprietary/vendor/data/camera/model/meghumaneffect/human_model_video:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/meghumaneffect/human_model_video \
-    vendor/tecno/LH8n/proprietary/vendor/data/camera/model/meghumaneffect/opencl_algo.cache:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/meghumaneffect/opencl_algo.cache \
-    vendor/tecno/LH8n/proprietary/vendor/data/camera/model/meghumaneffect/relight:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/meghumaneffect/relight \
     vendor/tecno/LH8n/proprietary/vendor/data/camera/model/preview_sky.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/preview_sky.mnn \
     vendor/tecno/LH8n/proprietary/vendor/data/camera/model/preview_sky_aurora.jpg:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/preview_sky_aurora.jpg \
     vendor/tecno/LH8n/proprietary/vendor/data/camera/model/preview_sky_detector.mnn:$(TARGET_COPY_OUT_VENDOR)/data/camera/model/preview_sky_detector.mnn \
@@ -1229,7 +1225,6 @@ PRODUCT_PACKAGES += \
     libTranHumanLight \
     libTranITDFaceBeauty \
     libTranMagicSky \
-    libTranMegHumanEffect \
     libTranPlatHW \
     libTranSTPRRepair \
     libTranSTSingleBlur \
