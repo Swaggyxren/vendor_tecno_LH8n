@@ -701,7 +701,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/LH8n/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/tecno/LH8n/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/tecno/LH8n/proprietary/vendor/etc/init/lh8n.android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lh8n.android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/tecno/LH8n/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
@@ -1624,7 +1623,6 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
-    lh8n.android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
     mtk.android.hardware.wifi.supplicant.xml \
     gnss-mediatek.xml \
@@ -1636,7 +1634,6 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     fuelgauged \
     fuelgauged_nvram \
-    lh8n.android.hardware.biometrics.fingerprint@2.1-service \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
